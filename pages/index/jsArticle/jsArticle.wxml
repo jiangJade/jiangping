@@ -1,0 +1,6 @@
+<view class="jsBasiceBox">
+    <text class="userinfo-nickname">javaScript基础</text>
+    <view>
+        这是js基础部分
+    </view>
+</view>

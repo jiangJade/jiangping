@@ -1,0 +1,119 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200rpx;
+}
+.index{
+    background-color: #FBF9FE;
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+    flex: 1;
+    min-height: 100%;
+    font-size: 16rpx;
+}
+.head{
+    padding: 40rpx;
+}
+.body{
+    width: 100%;
+    padding-left: 15rpx;
+    padding-right: 15rpx;
+    overflow: hidden;
+}
+.title{
+    font-size: 30rpx;
+}
+.desc{
+    margin-top: 5rpx;
+    color: #888888;
+    font-size: 14rpx;
+}
+
+.widgets__item{
+    margin-top: 10rpx;
+    margin-bottom: 10rpx;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    border-radius: 2rpx;
+    cursor: pointer;
+}
+.widgets__info{
+    display: flex;
+    padding: 20rpx;
+    align-items: center;
+    flex-direction: row;
+}
+.widgets__info_show{
+    opacity: .4;
+}
+.widgets__info-name{
+    flex: 1;
+}
+.widgets__info-img{
+    width: 30rpx;
+    height: 30rpx;
+}
+
+.widgets__list{
+    display: none;
+}
+.widgets__list_show{
+    display: block;
+}
+/*
+.widgets__list{
+    height: 0;
+    overflow: hidden;
+}
+.widgets__list_show{
+    height: auto;
+}
+.widgets__list-inner{
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: .3s;
+}
+.widgets__list-inner_show{
+    opacity: 1;
+    transform: translateY(0);
+}
+*/
+
+.widget{
+    position: relative;
+    padding-top: 13rpx;
+    padding-bottom: 13rpx;
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+}
+.widget__arrow{
+    position: absolute;
+    top: 14rpx;
+    right: 22rpx;
+    width: 16rpx;
+    height: 16rpx;
+}
+.widget__line{
+    content: " ";
+    position: absolute;
+    left: 20rpx;
+    bottom: 0;
+    right: 20rpx;
+    height: 1rpx;
+    background-color: #DFDFDF;
+}

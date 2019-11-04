@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/component/jsContent/jsContent",
+    "pages/component/newArticle/newArticle",
+    "pages/index/jsArticle/jsArticle"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/record.png",
+        "selectedIconPath": "images/wechatHL.png",
+        "text": "前端"
+      },
+      {
+        "pagePath": "pages/component/jsContent/jsContent",
+        "iconPath": "images/record.png",
+        "selectedIconPath": "images/wechatHL.png",
+        "text": "typeScript"
+      },
+      {
+        "pagePath": "pages/component/newArticle/newArticle",
+        "iconPath": "images/record.png",
+        "selectedIconPath": "images/wechatHL.png",
+        "text": "最新文章"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

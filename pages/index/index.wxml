@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="body">
+    <view class="widgets">
+      <view class="widgets__item" wx:for="{{titleData}}" wx:key="id" wx:for-item="item">
+
+          <view id="{{item.id}}" class="widgets__info {{pageData[item.is + item.show] ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
+              <text class="widgets__info-name">{{item.id}}</text>
+              <image class="widgets__info-img" src="{{item.icon}}" background-size="cover" />
+          </view>
+          <view class="widgets__list {{pageData[item.id + item.show] ? 'widgets__list_show' : ''}}" wx:for="{{item.subData}}" wx:for-item="subItem" wx:key="item.subTitle">
+              <navigator url="{{subItem.subUrl}}" class="widget">
+                  <text class="widget__name">{{subItem.subTitle}}</text>
+                  <image class="widget__arrow" src="{{subitem.icon}}" background-size="cover" />
+                  <view class="widget__line"></view>
+              </navigator>
+          </view>
+      </view>
+    </view>
+  </view>
+</view>
